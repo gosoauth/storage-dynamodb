@@ -1,4 +1,4 @@
-package goauthstoragedynamodb
+package gosoauthstoragedynamodb
 
 import "github.com/RangelReale/osin"
 
