@@ -33,6 +33,9 @@ func NewDynamoDBStorage() *DynamoDBStorage {
 
 func (s *DynamoDBStorage) Setup() {
 	// TODO: Add Table Creation here
+	setupOAuthClientTable(s.db)
+	setupOAuthAuthorizeDataTable(s.db)
+	setupOAuthAccessDataTable(s.db)
 }
 
 func (s *DynamoDBStorage) Clone() osin.Storage {
